@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-)$=p2%zoi5wx%5((f79$aumlgab%#jok0sd^9rbw#mxs!8h83*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["finalbackend111.pythonanywhere.com"]
+ALLOWED_HOSTS = ["finalbackend111.pythonanywhere.com" ]
 
 
 # Application definition
@@ -135,6 +135,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 OTP_DEV_API_KEY = os.getenv('TUj2QWF6CqDPgOYKNivzk8fH3dnxyblA')
 
 
+CORS_ALLOWED_ORIGINS = [
+    "https://landsathi.com",
+    "https://final-real-estate.vercel.app"
+]
 
 
 # Media Files Configuration
@@ -146,4 +150,4 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
-CORS_ALLOW_ALL_ORIGINS = True
+
